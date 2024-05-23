@@ -1,0 +1,13 @@
+---
+title: "ES193_week8"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(lterdatasampler)
+view(knz_bison)
+knz_bison_clean <- knz_bison %>%
+  rename(Birthyear = animal_yob)
+```
